@@ -3,6 +3,8 @@
 
 
 // 后序遍历
+// 用两个栈实现
+
 int main()
 {
     printf("Hello World\n");
