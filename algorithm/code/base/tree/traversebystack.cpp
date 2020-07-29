@@ -1,16 +1,4 @@
-#include <stdio.h>
-#include <windows.h>
-#include <iostream>
-#include <stack>
-using namespace std;
-
-//定义节点
-template<typename T>
-struct Node{
-	T value;
-	Node *left;
-	Node *right;
-};
+#include"common.h"
 
 
 
@@ -84,6 +72,7 @@ void posOrderStack(Node<T>* head)
 
 }
 
+
 int main()
 {
 	printf("Hello World\n");
@@ -117,7 +106,7 @@ int main()
 	seven.left = NULL;
 	seven.right = NULL;
 	cout << "递归方式实现" << endl;
-    posOrderStack<int>(&one);
+    Display(&one,0);
     system("pause");
     return 0;
 }

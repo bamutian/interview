@@ -1,18 +1,4 @@
-#include <stdio.h>
-#include <windows.h>
-#include <iostream>
-#include <stack>
-using namespace std;
-
-
-//定义节点
-template<typename T>
-struct Node{
-	T value;
-	Node *left;
-	Node *right;
-};
-
+#include "common.h"
 
 // 先序遍历 递归方式
 template<typename T>
@@ -55,7 +41,6 @@ void lateOrderRecur(Node<T>* node){
 	cout << node->value << "\n";
 
 }
-
 
 
 int main()
