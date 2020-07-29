@@ -26,3 +26,5 @@ insert（key）：将某个key加入到该结构，做到不重复加入。
 delete（key）：将原本在结构中的某个key移除。 getRandom()：
 等概率随机返回结构中的任何一个key。
 【要求】 Insert、 delete和 getRandom方法的时间复杂度都是0（1）
+
+ 
