@@ -173,25 +173,81 @@ int findMaximizedCapital(int k,int W,int* profits,int* Captital,int length)
 }
 
 
+
+class Program
+{
+public:
+    /* data */
+    int start;
+    int end;
+public:
+    Program(int t ,int e)
+    {
+        this->start=t;
+        this->end = e;
+    }
+
+};
+
+
+bool compareProgram(Program p1,Program p2)
+{
+
+    return p1.end<p2.end;
+}
+
+
+
+// 项目组开会会议室安排
+int bestArrange(Program * pro, int cur,int length)
+{
+
+    sort(pro,pro+length,compareProgram);
+    int result = 0;
+    for (int i = 0; i < length; i++)
+    {
+        /* code */
+        if (cur <= pro[i].start)
+        {
+            /* code */
+            result++;
+            cur = pro[i].end;
+        }
+        
+    }
+    return result;
+    
+}
+
+
+
 int main(){
 
     // 字符串数组
     // string str [3] ={"ab","ef","bc"};
     // string resStr = lowestString(str,3);
     // cout<<resStr<<endl;
+
     // 分金块
     // int test[]={10,20,30,40};
     // int res = lessMoney(test,4);
     // cout<<"总共最低花费:";
     // cout<<res<<endl;
+
     // 投项目
-    int k=2;
-    int W=100;
-    int profit[] = {30,20,10};
-    int cost [] ={50,30,40};
-    int len = 3;
-    int res = findMaximizedCapital(k,W,profit,cost,len);  
-    cout<<"投资项目总的：";
+    // int k=2;
+    // int W=100;
+    // int profit[] = {30,20,10};
+    // int cost [] ={50,30,40};
+    // int len = 3;
+    // int res = findMaximizedCapital(k,W,profit,cost,len);  
+    // cout<<"投资项目总的：";
+    // cout<<res<<endl;
+
+    // 安排会议
+    Program pro[]={Program(1,3),Program(4,6),Program(5,7)};
+    int res = bestArrange(pro,1,3);
+    cout<<"安排的会议个数是：";
     cout<<res<<endl;
 
 
