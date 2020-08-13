@@ -53,6 +53,7 @@ string& movestr(int num,const string& str)
 int main(){
 
     // 方法1
+    // 反转的方式
     // char str [] = "123456789";
     // int num = 8;
     // int nlen = strlen(str);
@@ -60,7 +61,7 @@ int main(){
     // reverse(str,str+num-1);
     // reverse(str+num,str+nlen-1);
     // cout<<str<<endl;
-    // 方法2
+    // 方法2 逐个遍历
     // string str("123456789");
     // movestr(3, str);
 
