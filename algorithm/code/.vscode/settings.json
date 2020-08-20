@@ -41,6 +41,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "queue": "cpp",
-        "ctime": "cpp"
+        "ctime": "cpp",
+        "regex": "cpp"
     }
 }
