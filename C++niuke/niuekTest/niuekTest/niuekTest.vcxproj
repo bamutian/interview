@@ -85,6 +85,9 @@
     <ClInclude Include="ThreadPool.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1.h" />
+    <ClCompile Include="2.cpp" />
+    <ClCompile Include="3.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="niuekTest.cpp" />
     <ClCompile Include="stdafx.cpp">

@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-// 
+// 最大公约数
 int main(){
 
     // int m,n;

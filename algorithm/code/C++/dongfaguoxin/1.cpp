@@ -1,60 +1,60 @@
 
 
-#include<stdio.h>
-#include<iostream>
-using namespace std;
+// #include<stdio.h>
+// #include<iostream>
+// using namespace std;
 
-class A {
+// class A {
 
-public:
+// public:
 
-int m_value;
+// int m_value;
 
-public:
+// public:
 
-A(int value) {
+// A(int value) {
 
-m_value = value;
+// m_value = value;
 
-}
+// }
 
-void Print1() {
+// void Print1() {
 
-printf("hello world, print1");
-cout<<"this is ："<<this<<endl;
+// printf("hello world, print1");
+// cout<<"this is ："<<this<<endl;
 
-}
+// }
 
-virtual void Print2() {
+// virtual void Print2() {
 
-printf("hello world, print2");
+// printf("hello world, print2");
 
-}
+// }
 
-void Print3() {
+// void Print3() {
 
-printf("%d", m_value);
+// printf("%d", m_value);
 
-}
+// }
 
-};
+// };
 
-int main(int argc, char** argv) {
-
-
-
-A* pA = reinterpret_cast<A*>(1);
+// int main(int argc, char** argv) {
 
 
-pA->Print1();
 
-// pA->Print2();
+// A* pA = reinterpret_cast<A*>(1);
 
-// pA->Print3();
 
-return 0;
+// pA->Print1();
 
-}
+// // pA->Print2();
+
+// // pA->Print3();
+
+// return 0;
+
+// }
 
 
 // #include <iostream>
@@ -177,66 +177,67 @@ return 0;
 
 
 
-// #include <iostream>
+#include <iostream>
 
-// class A {
+class A {
 
-// public:
+public:
 
-// A() {
+A() {
 
-// std::cout << "A is created." << std::endl;
+std::cout << "A is created." << std::endl;
 
-// Print();
+Print();
 
-// }
+}
 
-// ~A() {
+~A() {
 
-// std::cout << "A is deleted." << std::endl;
+std::cout << "A is deleted." << std::endl;
 
-// }
+}
 
-// virtual void Print() {
+virtual void Print() {
 
-// std::cout << "A::Print called." << std::endl;
+std::cout << "A::Print called." << std::endl;
 
-// }
+}
 
-// };
+};
 
-// class B : public A {
+class B : public A {
 
-// public:
+public:
 
-// B() {
+B() {
 
-// std::cout << "B is created." << std::endl;
+std::cout << "B is created." << std::endl;
 
-// Print();
+Print();
 
-// }
+}
 
-// ~B() {
+~B() {
 
-// std::cout << "B is deleted." << std::endl;
+std::cout << "B is deleted." << std::endl;
 
-// }
+}
 
-// virtual void Print() {
+virtual void Print() {
 
-// std::cout << "B::Print called." << std::endl;
+std::cout << "B::Print called." << std::endl;
 
-// }
+}
 
-// };
+};
 
-// int main(int argc, char** argv) {
+int main(int argc, char** argv) {
 
 // A* pA = new B();
+A pa = new B();
 
 // delete pA;
 
-// return 0;
+return 0;
 
-// }
+}

@@ -1,19 +1,19 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <future>
-#include <thread>
-#include <chrono>
-#include "ThreadPool.h"
-using namespace std;
-using namespace chrono;
-
-/*
-	This thread pool can be seen as producer-consumer-like model.
-	ThreadPool::m_tasks() is the critical section
-	ThreadPool::m_workers() is the consumer, which can consume 4 tasks concurrently
-	ThreadPool::enqueue() is the producer, which is called 32 times in main::for(...)
-*/
+//#include <iostream>
+//#include <vector>
+//#include <string>
+//#include <future>
+//#include <thread>
+//#include <chrono>
+//#include "ThreadPool.h"
+//using namespace std;
+//using namespace chrono;
+//
+///*
+//	This thread pool can be seen as producer-consumer-like model.
+//	ThreadPool::m_tasks() is the critical section
+//	ThreadPool::m_workers() is the consumer, which can consume 4 tasks concurrently
+//	ThreadPool::enqueue() is the producer, which is called 32 times in main::for(...)
+//*/
 //int main()
 //{
 //	ThreadPool pool(4);                 // a pool that run 4 threads concurrently

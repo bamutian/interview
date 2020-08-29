@@ -5,7 +5,7 @@ void test()
 {
     int len;
     cin>>len;
-    string str(200,'a');
+    string str(20,'a');
     cout << str << endl;
     for (int i = 0; i < len; ++i)
     {
